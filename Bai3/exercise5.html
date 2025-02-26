@@ -1,0 +1,20 @@
+<form action="" method="POST">
+    <label for="fullname">Họ và tên: </label>
+    <input type="text">
+    <br>
+    <label for="date">Chọn ngày giờ: </label>
+    <input type="datetime-local" name="date" id="date">
+    <br>
+    <label for="service_type">Loại dịch vụ: </label>
+    <select name="service_type" id="service_type">
+        <option value="on">Ở nhà</option>
+        <option value="sp">Spa</option>
+        <option value="ht">Home Stay</option>
+        <option value="ks">Khách sạn</option>
+    </select>
+    <br>
+    <label for="note">Ghi chú: </label>
+    <textarea name="note" id="note" cols="50" rows="5"></textarea>
+    <br>
+    <input type="submit" value = "Đặt lịch">
+</form>

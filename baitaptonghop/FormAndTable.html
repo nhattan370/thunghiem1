@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu đăng ký khóa học</title>
+</head>
+<body>
+
+    <h2>Biểu mẫu đăng ký khóa học</h2>
+
+    <form action="submit.php" method="POST">
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th colspan="2">Thông tin cá nhân</th>
+            </tr>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="full_name" required></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Nam
+                    <input type="radio" name="gender" value="female"> Nữ
+                    <input type="radio" name="gender" value="other"> Khác
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Thông tin khóa học</th>
+            </tr>
+            <tr>
+                <td>Chọn khóa học:</td>
+                <td>
+                    <select name="course">
+                        <option value="html">HTML Cơ Bản</option>
+                        <option value="css">CSS Nâng Cao</option>
+                        <option value="javascript">JavaScript Cơ Bản</option>
+                        <option value="react">ReactJS Nâng Cao</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hình thức học:</td>
+                <td>
+                    <input type="checkbox" name="online" value="yes"> Học Online
+                    <input type="checkbox" name="offline" value="yes"> Học Offline
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú:</td>
+                <td><textarea name="notes" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Đăng ký</button>
+                    <button type="reset">Làm lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

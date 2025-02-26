@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form CCCD</title>
+    <style>
+        /* CSS để căn chỉnh form */
+        .form-group {
+            display: flex;
+            align-items: center; /* Căn giữa theo chiều dọc */
+            margin-bottom: 10px; /* Khoảng cách giữa các hàng */
+        }
+
+        .form-group label {
+            width: 200px; /* Độ rộng cố định của label */
+            text-align: left; /* Canh phải để thẳng hàng với input */
+            margin-right: 10px; /* Khoảng cách giữa label và input */
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 300px;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input[type="radio"] {
+            flex: 0; /* Không co giãn radio */
+            margin-right: 5px;
+        }
+
+        /* Căn nút submit ra giữa */
+        .form-submit {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="date_of_birth">Ngày sinh:</label>
+            <input type="date" id="date_of_birth">
+        </div>
+
+        <div class="form-group">
+            <label for="sex">Giới tính:</label>
+            <input type="radio" id="male" name="sex" value="male"> Nam
+            <input type="radio" id="female" name="sex" value="female"> Nữ
+        </div>
+
+        <div class="form-group">
+            <label for="CCCD">Số căn cước công dân:</label>
+            <input type="number" id="CCCD">
+        </div>
+
+        <div class="form-group">
+            <label for="date_of_issue">Ngày cấp:</label>
+            <input type="date" id="date_of_issue">
+        </div>
+
+        <div class="form-group">
+            <label for="place_of_issue">Nơi cấp:</label>
+            <textarea id="place_of_issue" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="phone_number">Số điện thoại:</label>
+            <input type="number" id="phone_number">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="registered_address">Địa chỉ thường trú:</label>
+            <textarea id="registered_address" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="temporary_address">Địa chỉ tạm trú:</label>
+            <textarea id="temporary_address" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Loại căn cước công dân:</label>
+            <input type="radio" name="type_identity" value="new"> Căn cước công dân mới
+            <input type="radio" name="type_identity" value="old"> Căn cước công dân cũ
+        </div>
+
+        <div class="form-group">
+            <label for="Ethnicity">Dân tộc:</label>
+            <input type="text" id="Ethnicity">
+        </div>
+
+        <div class="form-group">
+            <label for="religion">Tôn giáo:</label>
+            <input type="text" id="religion">
+        </div>
+
+        <div class="form-group">
+            <label for="nationality">Quốc tịch:</label>
+            <input type="text" id="nationality" placeholder="Việt Nam">
+        </div>
+
+        <div class="form-group">
+            <label for="name_father_mother">Họ tên Cha/Mẹ:</label>
+            <input type="text" id="name_father_mother">
+        </div>
+
+        <div class="form-group">
+            <label for="identity_father_mother">CCCD Cha/Mẹ:</label>
+            <input type="text" id="identity_father_mother">
+        </div>
+
+        <div class="form-group">
+            <label for="color">Mau sac yeu thich:</label>
+            <input type="color" id="color" value="#0000000">
+        </div>
+
+        <div class="form-group">
+            <label for="address_father_mother">Tỉnh/Thành phố Cha/Mẹ:</label>
+            <select id="address_father_mother">
+                <option value="1">Hà Nội</option>
+                <option value="2">TP. Hồ Chí Minh</option>
+                <option value="3">Đà Nẵng</option>
+            </select>
+        </div>
+
+        <div class="form-submit">
+            <input type="submit" value="Gửi thông tin">
+        </div>
+    </form>
+</body>
+</html>
